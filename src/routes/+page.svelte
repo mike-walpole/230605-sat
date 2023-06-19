@@ -118,6 +118,8 @@
 <input id="orange" type="radio" name="quiz" value="orange" />
 <label for="orange">Orange</label>
 
+<a href="/v3" class="button border border-black"> Contact Us </a>
+
 <style>
 	input[type='radio'] {
 		display: none;
