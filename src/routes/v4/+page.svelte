@@ -1,5 +1,6 @@
 <script>
 	import Select from 'svelte-select';
+	let box;
 	let submitted = false;
 	let items = [
 		{ label: 'Austria' },
@@ -70,6 +71,7 @@
 
 	async function handleSubmit() {
 		submitted = !submitted;
+
 		const data = {
 			selected,
 			q2,
@@ -130,9 +132,9 @@
 	}
 </script>
 
-<div class="flex justify-center">
-	<div class="max-w-2xl">
-		<img src="/enote-logo.png" />
+<div id="top" class="flex justify-center">
+	<div class="w-full md:max-w-2xl">
+		<img class="mx-5 my-10" src="/enote-logo.png" />
 		<form on:submit|preventDefault={handleSubmit}>
 			<div name="question" class="mt-10 mx-5 md:ml-10">
 				<p class="text-slate-500">Question 1</p>
@@ -454,16 +456,16 @@
 				<h2 class="text-xl font-bold">What's your email address:</h2>
 				<input class="w-full" type="email" bind:value={email} />
 			</div>
-			<button
-				class="border border-black my-20 font-bold mx-5 md:ml-10 w-full h-12 text-white bg-black"
-				type="submit">Show me how I compare to others</button
-			>
+			<a href="#comps">
+				<button
+					class="border border-black my-20 font-bold mx-5 md:ml-10 w-full h-12 text-white bg-black"
+					type="submit">Show me how I compare to others</button
+				>
+			</a>
 		</form>
 
 		{#if submitted}
-			<p>This text will show.</p>
-
-			<div name="comps">
+			<div id="comps">
 				<div class="max-w-2x mt-10 mx-5 md:ml-10">
 					<h2 class="text-xl font-bold mb-2">
 						Question 2: My institution prioritizes teaching excellence in its strategic documents or
