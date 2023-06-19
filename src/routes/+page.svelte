@@ -1,6 +1,6 @@
 <div id="top" class="flex justify-center">
 	<div class="w-full mx-5 md:max-w-2xl">
-		<img class="mx-5 my-10" src="/enote-logo.png" />
+		<img class=" my-10 w-1/2" src="/enote-logo.png" />
 		<h2 class="text-xl font-bold mb-5">Teaching Excellence Practices</h2>
 		<p class="mb-2">
 			The European Network on Teaching Excellence (E-NOTE) seeks to map out key practices and
