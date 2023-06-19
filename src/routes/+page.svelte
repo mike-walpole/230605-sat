@@ -1,5 +1,5 @@
 <div id="top" class="flex justify-center">
-	<div class="w-full md:max-w-2xl">
+	<div class="w-full mx-5 md:max-w-2xl">
 		<img class="mx-5 my-10" src="/enote-logo.png" />
 		<h2 class="text-xl font-bold mb-5">Teaching Excellence Practices</h2>
 		<p class="mb-2">
@@ -18,11 +18,18 @@
 			www.teachingexcellence.eu or you can send us an email at info@teachingexcellence.eu
 		</p>
 		<p>Thank youfor taking the time to share your experience with us!</p>
-		<div class="flex flex-row mt-10">
-			<a href="/v4"><button class="border border-black px-5 py-2 mr-5"> I'm a Professor </button></a
+		<div class="flex flex-col md:flex-row mt-10">
+			<a href="/v4"
+				><button class="w-full md:w-fit mb-5 border border-black px-5 py-2 mr-5">
+					I'm a Professor
+				</button></a
 			>
-			<button class="border border-black px-5 py-2 mr-5"> I'm an Academic Manager </button>
-			<button class="border border-black px-5 py-2 mr-5"> I'm a PhD Supervisor </button>
+			<button class="w-full md:w-fit mb-5 border border-black px-5 py-2 mr-5">
+				I'm an Academic Manager
+			</button>
+			<button class="w-full md:w-fit mb-5 border border-black px-5 py-2 mr-5">
+				I'm a PhD Supervisor
+			</button>
 		</div>
 	</div>
 </div>
