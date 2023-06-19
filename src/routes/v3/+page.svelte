@@ -166,11 +166,11 @@
 			<div class="flex flex-col">
 				<div class="flex justify-between">
 					<p for="q4a">Knowledge transfer (i.e. students mastering the subject)</p>
-					<input class="border-b-4" id="q4a" placeholder="e.g. 1" type="text" bind:value={q4a} />
+					<input class="border-b-4" id="q4a" placeholder="e.g. 1" type="number" bind:value={q4a} />
 				</div>
 				<div class="flex justify-between">
 					<p for="q4b">Developing students` critical thinking</p>
-					<input id="q4b" placeholder="e.g. 2" type="text" bind:value={q4b} />
+					<input id="q4b" placeholder="e.g. 2" type="number" bind:value={q4b} />
 				</div>
 
 				<div class="flex justify-between">
@@ -244,7 +244,7 @@
 		background-color: black;
 		color: white;
 	}
-	input[type='text'] {
+	input[type='number'] {
 		width: 80px;
 		border: 0px solid black;
 		border-bottom: solid black;
