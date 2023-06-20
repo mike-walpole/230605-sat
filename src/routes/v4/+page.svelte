@@ -30,8 +30,30 @@
 		{ label: 'Spain' },
 		{ label: 'Sweden' }
 	];
+
+	let titles = [
+		{ label: 'Junior Lecturer (without PhD)' },
+		{ label: 'Junior Lecturer (with PhD)' },
+		{ label: 'PhD candidate (with teaching obligations)' },
+		{ label: 'Post-Doc (with teaching obligations)' },
+		{ label: 'Assistant Professor' },
+		{ label: 'Associate Professor' },
+		{ label: 'Full Professor' },
+		{ label: 'Other' }
+	];
+
+	let types = [
+		{ label: 'Publicly funded University' },
+		{ label: 'Privately funded University' },
+		{ label: 'Liberal Arts College' },
+		{ label: 'University of Applied Sciences' },
+		{ label: 'Other' }
+	];
+
+	let institution = '';
 	let selected = '';
-	let excellence = '';
+	let position = '';
+	let q1c = '';
 	let q2 = '';
 	let q3 = '';
 	let q4a = '';
@@ -74,6 +96,7 @@
 
 		const data = {
 			selected,
+			q1c,
 			q2,
 			q3,
 			q4a,
@@ -108,8 +131,9 @@
 			q11,
 			q12,
 			email,
-
-			created
+			created,
+			institution,
+			position
 		};
 
 		fetch('https://sheet.best/api/sheets/8a267e1c-3bae-4693-b18a-f9ed9e29c7e4/tabs/Rawa', {
@@ -140,6 +164,67 @@
 				<p class="text-slate-500">Question 1</p>
 				<h2 class="text-xl font-bold mb-5">My institution is based in the following EU country</h2>
 				<Select id="countries" {items} bind:value={selected} />
+			</div>
+
+			<div name="question" class="mt-10 mx-5 md:ml-10">
+				<p class="text-slate-500">Question 2</p>
+				<h2 class="text-xl font-bold mb-5">My institution is best described as</h2>
+				<select class="w-full" bind:value={institution}>
+					{#each types as type}
+						<option value={type}>
+							{type.label}
+						</option>
+					{/each}
+				</select>
+			</div>
+
+			<div name="question" class="mt-10 mx-5 md:ml-10">
+				<p class="text-slate-500">Question 1c</p>
+				<h2 class="text-xl font-bold">My professional background is</h2>
+				<p class="italic text-slate-500 mb-5">
+					(Frequency: 1 Never 2 Rarely 3 Occasionally 4 Frequently 5 All the time)
+				</p>
+				<div class="w-full md:w-fit flex flex-col">
+					<input
+						class="w-full md:w-fit mb-2 px-5"
+						type="radio"
+						id="q1c1"
+						name="q1c"
+						value="'Junior Lecturer (without PhD)' "
+						bind:group={q1c}
+					/>
+					<label class="w-full md:w-fit mb-2 px-5" for="q1c1">Junior Lecturer (without PhD)</label>
+					<input
+						type="radio"
+						id="q1c2"
+						name="q1c"
+						value="Junior Lecturer (with PhD)"
+						bind:group={q1c}
+					/>
+					<label class="w-full md:w-fit mb-2 px-5" for="q1c2">Junior Lecturer (with PhD)</label>
+					<input
+						type="radio"
+						id="q1c3"
+						name="q1c"
+						value="PhD candidate (with teaching obligations)"
+						bind:group={q1c}
+					/>
+					<label class="w-full md:w-fit mb-2 px-5" for="q1c3"
+						>Post-Doc (with teaching obligations)</label
+					>
+					<input
+						type="radio"
+						id="q1c4"
+						name="q1c"
+						value="Post-Doc (with teaching obligations)"
+						bind:group={q1c}
+					/>
+					<label class="w-full md:w-fit mb-2 px-5" for="q1c4"
+						>Post-Doc (with teaching obligations)</label
+					>
+					<input type="radio" id="q1c5" name="q1c" value="Assistant Professor" bind:group={q1c} />
+					<label class="w-full md:w-fit mb-2 px-5" for="q1c5">Assistant Professor</label>
+				</div>
 			</div>
 
 			<div name="question" class="mt-10 mx-5 md:ml-10">
@@ -542,11 +627,12 @@
 		cursor: pointer;
 		display: block;
 		height: 62px;
-		width: 100px;
+		min-width: 100px;
 		text-align: center;
 		line-height: 62px;
 		margin-right: 1em;
 		border-radius: 5px;
+		width: fit-content;
 	}
 	input[type='radio']:checked + label {
 		border: 2px solid black;
