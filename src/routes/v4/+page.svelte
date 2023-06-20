@@ -139,6 +139,15 @@
 			q10,
 			q11,
 			q12,
+			q13a,
+			q13b,
+			q13c,
+			q13d,
+			q13e,
+			q13f,
+			q13g,
+			q13h,
+
 			email,
 			created,
 			institution,
@@ -671,7 +680,7 @@
 			<div name="question" class="mt-10 mx-2 md:ml-10">
 				<h2 class="text-xl">Time and Stress Management for University Teachers</h2>
 				<p class="italic text-slate-500 mb-5">(Agreement: 1 Not Beneficial 5 Very Beneficial)</p>
-				<div class="flex flex-row mr-10">
+				<div class="flex flex-row mr-5">
 					<input type="radio" id="q13h1" name="q13h" value="1" bind:group={q13h} />
 					<label for="q13h1">1</label>
 					<input type="radio" id="q13h2" name="q13h" value="2" bind:group={q13h} />
@@ -776,7 +785,7 @@
 		cursor: pointer;
 		display: block;
 		height: 62px;
-		min-width: 90px;
+		min-width: 80px;
 		text-align: center;
 		line-height: 62px;
 		margin-right: 1em;
