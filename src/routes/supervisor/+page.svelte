@@ -252,8 +252,8 @@
 			<div name="question" class="mt-10 mx-2 mr-10 md:ml-10">
 				<p class="text-slate-500">Question 2</p>
 				<h2 class="text-xl font-bold">
-					My institution prioritizes teaching excellence in its strategic documents or discussions
-					and communicates frequently about it
+					My institution prioritizes PhD supervision excellence in its strategic documents or
+					discussions and communicates frequently about it
 				</h2>
 				<p class="italic text-slate-500 mb-5">
 					(Frequency: 1 Never 2 Rarely 3 Occasionally 4 Frequently 5 All the time)
@@ -275,7 +275,7 @@
 			<div name="question" class="mt-10 mx-2 md:ml-10">
 				<p class="text-slate-500">Question 3</p>
 				<h2 class="text-xl font-bold">
-					I have a clear understanding of what teaching excellence is and entails
+					I have a clear understanding of what PhD supervision excellence is and entails
 				</h2>
 				<p class="italic text-slate-500 mb-5">
 					(Agreement: 1 Strongly Disagree 2 Disagree 3 Undecided 4 Agree 5 Strongly Agree)
@@ -296,7 +296,7 @@
 
 			<div name="question" class="mt-10 mx-2 md:ml-10">
 				<p class="text-slate-500">Question 4</p>
-				<h2 class="text-xl font-bold">To me, teaching excellence means:</h2>
+				<h2 class="text-xl font-bold">To me, PhD supervision excellence means:</h2>
 				<p class="italic text-slate-500 mb-5">
 					(Rank in order of priority: 1 is the top priority, 7 is the bottom priority)
 				</p>
@@ -342,8 +342,8 @@
 			<div name="question" class="mt-10 mx-2 md:ml-10">
 				<p class="text-slate-500">Question 5</p>
 				<h2 class="text-xl font-bold">
-					I am familiar with teaching practices that promote “excellence” and I have applied some in
-					my own teaching
+					I am familiar with PhD supervision practices that promote “excellence” and I have applied
+					some in my own PhD supervision
 				</h2>
 				<p class="italic text-slate-500 mb-5">
 					(Agreement: 1 Strongly Disagree 2 Disagree 3 Undecided 4 Agree 5 Strongly Agree)
@@ -365,7 +365,7 @@
 			<div name="question" class="mt-10 mx-2 md:ml-10">
 				<p class="text-slate-500">Question 6</p>
 				<h2 class="text-xl font-bold">
-					In my opinion the most important qualities of an excellent teacher are:
+					In my opinion the most important qualities of an excellent PhD supervisor are:
 				</h2>
 				<p class="italic text-slate-500 mb-5">
 					(Rank in order of priority: 1 is the top priority, 8 is the bottom priority)
@@ -415,8 +415,8 @@
 			<div name="question" class="mt-10 mx-2 md:ml-10">
 				<p class="text-slate-500">Question 7</p>
 				<h2 class="text-xl font-bold">
-					In my opinion the conditions that contribute most significantly to teaching excellence
-					are:
+					In my opinion the conditions that contribute most significantly to PhD supervision
+					excellence are:
 				</h2>
 				<p class="italic text-slate-500 mb-5">
 					(Rank in order of priority: 1 is the top priority, 11 is the bottom priority)
@@ -459,11 +459,11 @@
 						<input id="q6h" placeholder="e.g. 9" type="number" bind:value={q7i} />
 					</div>
 					<div class="flex justify-between">
-						<p for="q6h">Teaching awards</p>
+						<p for="q6h">PhD supervision awards</p>
 						<input id="q6h" placeholder="e.g. 10" type="number" bind:value={q7j} />
 					</div>
 					<div class="flex justify-between">
-						<p for="q6h">Teaching-focused career paths/promotions</p>
+						<p for="q6h">PhD supervision-focused career paths/promotions</p>
 						<input id="q6h" placeholder="e.g. 11" type="number" bind:value={q7k} />
 					</div>
 				</div>
@@ -472,7 +472,7 @@
 			<div name="question" class="mt-10 mx-2 md:ml-10">
 				<p class="text-slate-500">Question 9</p>
 				<h2 class="text-xl font-bold">
-					Excellent teaching is important for promotion at my institution
+					Excellent PhD supervision is important for promotion at my institution
 				</h2>
 				<p class="italic text-slate-500 mb-5">
 					(Agreement: 1 Strongly Disagree 2 Disagree 3 Undecided 4 Agree 5 Strongly Agree)
@@ -494,7 +494,7 @@
 			<div name="question" class="mt-10 mx-2 md:ml-10">
 				<p class="text-slate-500">Question 10</p>
 				<h2 class="text-xl font-bold">
-					There are sufficient awards and recognition schemes for excellent teaching at my
+					There are sufficient awards and recognition schemes for excellent PhD supervision at my
 					institution
 				</h2>
 				<p class="italic text-slate-500 mb-5">
@@ -517,7 +517,7 @@
 			<div name="question" class="mt-10 mx-2 md:ml-10">
 				<p class="text-slate-500">Question 11</p>
 				<h2 class="text-xl font-bold">
-					My institution offers a sufficient number of trainings for improving my teaching
+					My institution offers a sufficient number of trainings for improving my PhD supervision
 				</h2>
 				<p class="italic text-slate-500 mb-5">
 					(Agreement: 1 Strongly Disagree 2 Disagree 3 Undecided 4 Agree 5 Strongly Agree)
@@ -539,7 +539,7 @@
 			<div name="question" class="mt-10 mx-2 md:ml-10">
 				<p class="text-slate-500">Question 12</p>
 				<h2 class="text-xl font-bold">
-					I have attended training courses on teaching skills in the past
+					I have attended training courses on PhD supervision skills in the past
 				</h2>
 				<p class="italic text-slate-500 mb-5">
 					(Agreement: 1 Strongly Disagree 2 Disagree 3 Undecided 4 Agree 5 Strongly Agree)
@@ -711,7 +711,7 @@
 			</div>
 			<label class="mt-10 mx-2 md:ml-10">
 				<input type="checkbox" />
-				You can send me insights about teaching excellence
+				You can send me insights about PhD supervision excellence
 			</label>
 
 			<a href="#comps">
@@ -726,8 +726,8 @@
 			<div id="comps">
 				<div class="max-w-2x mt-10 mx-5 md:ml-10">
 					<h2 class="text-xl font-bold mb-2">
-						Question 2: My institution prioritizes teaching excellence in its strategic documents or
-						discussions and communicates frequently about it
+						Question 2: My institution prioritizes PhD supervision excellence in its strategic
+						documents or discussions and communicates frequently about it
 					</h2>
 					<p class="text-xl">
 						You selected <span class="font-bold">{q2}.</span> The European average is 3.7
@@ -735,7 +735,8 @@
 				</div>
 				<div class="max-w-2x mt-10 mx-5 md:ml-10">
 					<h2 class="text-xl font-bold mb-2">
-						Question 3: I have a clear understanding of what teaching excellence is and entails
+						Question 3: I have a clear understanding of what PhD supervision excellence is and
+						entails
 					</h2>
 					<p class="text-xl">
 						You selected <span class="font-bold">{q3}.</span> The European average is 3.9
@@ -743,8 +744,8 @@
 				</div>
 				<div class="max-w-2x mt-10 mx-5 md:ml-10">
 					<h2 class="text-xl font-bold mb-2">
-						Question 5: I am familiar with teaching practices that promote “excellence” and I have
-						applied some in my own teaching
+						Question 5: I am familiar with PhD supervision practices that promote “excellence” and I
+						have applied some in my own PhD supervision
 					</h2>
 					<p class="text-xl">
 						You selected <span class="font-bold">{q5}.</span> The European average is 3.6
@@ -752,7 +753,7 @@
 				</div>
 				<div class="max-w-2x mt-10 mx-5 md:ml-10">
 					<h2 class="text-xl font-bold mb-2">
-						Question 9: Excellent teaching is important for promotion at my institution
+						Question 9: Excellent PhD supervision is important for promotion at my institution
 					</h2>
 					<p class="text-xl">
 						You selected <span class="font-bold">{q9}.</span> The European average is 3.0
@@ -760,8 +761,8 @@
 				</div>
 				<div class="max-w-2x mt-10 mx-5 md:ml-10">
 					<h2 class="text-xl font-bold mb-2">
-						Question 10: There are sufficient awards and recognition schemes for excellent teaching
-						at my institution
+						Question 10: There are sufficient awards and recognition schemes for excellent PhD
+						supervision at my institution
 					</h2>
 					<p class="text-xl">
 						You selected <span class="font-bold">{q10}.</span> The European average is 2.6
@@ -769,8 +770,8 @@
 				</div>
 				<div class="max-w-2x mt-10 mx-5 md:ml-10">
 					<h2 class="text-xl font-bold mb-2">
-						Question 11: My institution offers a sufficient number of trainings for improving my
-						teaching
+						Question 11: My institution offers a sufficient number of trainings for improving my PhD
+						supervision
 					</h2>
 					<p class="text-xl">
 						You selected <span class="font-bold">{q11}.</span> The European average is 3.1
@@ -778,7 +779,7 @@
 				</div>
 				<div class="max-w-2x mt-10 mx-5 md:ml-10">
 					<h2 class="text-xl font-bold mb-2">
-						Question 12: I have attended training courses on teaching skills in the past
+						Question 12: I have attended training courses on PhD supervision skills in the past
 					</h2>
 					<p class="text-xl">
 						You selected <span class="font-bold">{q12}.</span> The European average is 3.3
