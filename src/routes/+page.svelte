@@ -19,17 +19,21 @@
 		</p>
 		<p>Thank youfor taking the time to share your experience with us!</p>
 		<div class="flex flex-col md:flex-row mt-10">
-			<a href="/v4"
+			<a href="/professor"
 				><button class="w-full md:w-fit mb-5 border border-black px-5 py-2 mr-5">
 					I'm a Professor
 				</button></a
 			>
-			<button class="w-full md:w-fit mb-5 border border-black px-5 py-2 mr-5">
-				I'm an Academic Manager
-			</button>
-			<button class="w-full md:w-fit mb-5 border border-black px-5 py-2 mr-5">
-				I'm a PhD Supervisor
-			</button>
+			<a href="/administrator">
+				<button class="w-full md:w-fit mb-5 border border-black px-5 py-2 mr-5">
+					I'm an Academic Manager
+				</button>
+			</a>
+			<a href="/supervisor">
+				<button class="w-full md:w-fit mb-5 border border-black px-5 py-2 mr-5">
+					I'm a PhD Supervisor
+				</button>
+			</a>
 		</div>
 	</div>
 </div>

@@ -49,7 +49,7 @@
 		{ label: 'University of Applied Sciences' },
 		{ label: 'Other' }
 	];
-
+	let consent = false;
 	let institution = '';
 	let selected = '';
 	let position = '';
@@ -147,6 +147,7 @@
 			q13f,
 			q13g,
 			q13h,
+			consent,
 
 			email,
 			created,
@@ -175,7 +176,7 @@
 </script>
 
 <div id="top" class="flex w-screen justify-center">
-	<div class="w-screen md:max-w-2xl">
+	<div class="w-full md:max-w-2xl">
 		<img class="mx-5 my-10" src="/enote-logo.png" />
 		<form class="w-full" on:submit|preventDefault={handleSubmit}>
 			<div name="question" class="mt-10 mx-5 md:ml-10">
@@ -239,7 +240,7 @@
 				</div>
 			</div>
 
-			<div name="question" class="mt-10 mx-2 md:ml-10">
+			<div name="question" class="mt-10 mx-2 mr-10 md:ml-10">
 				<p class="text-slate-500">Question 2</p>
 				<h2 class="text-xl font-bold">
 					My institution prioritizes teaching excellence in its strategic documents or discussions
@@ -699,6 +700,11 @@
 				<h2 class="text-xl font-bold">What's your email address:</h2>
 				<input class="w-full" type="email" bind:value={email} />
 			</div>
+			<label class="mt-10 mx-2 md:ml-10">
+				<input type="checkbox" />
+				You can send me insights about teaching excellence
+			</label>
+
 			<a href="#comps">
 				<button
 					class="border border-black my-20 font-bold mx-5 md:ml-10 w-full h-12 text-white bg-black"
@@ -788,7 +794,7 @@
 		min-width: 80px;
 		text-align: center;
 		line-height: 62px;
-		margin-right: 1em;
+		margin-right: 0.5em;
 		border-radius: 5px;
 	}
 	input[type='radio']:checked + label {
