@@ -87,6 +87,15 @@
 	let q10 = '';
 	let q11 = '';
 	let q12 = '';
+	let q13a = '';
+	let q13b = '';
+	let q13c = '';
+	let q13d = '';
+	let q13e = '';
+	let q13f = '';
+	let q13g = '';
+	let q13h = '';
+
 	let email = '';
 
 	let created = new Date();
@@ -156,18 +165,18 @@
 	}
 </script>
 
-<div id="top" class="flex justify-center">
-	<div class="w-full md:max-w-2xl">
+<div id="top" class="flex w-screen justify-center">
+	<div class="w-screen md:max-w-2xl">
 		<img class="mx-5 my-10" src="/enote-logo.png" />
-		<form on:submit|preventDefault={handleSubmit}>
+		<form class="w-full" on:submit|preventDefault={handleSubmit}>
 			<div name="question" class="mt-10 mx-5 md:ml-10">
-				<p class="text-slate-500">Question 1</p>
+				<p class="text-slate-500">Question 1a</p>
 				<h2 class="text-xl font-bold mb-5">My institution is based in the following EU country</h2>
 				<Select id="countries" {items} bind:value={selected} />
 			</div>
 
 			<div name="question" class="mt-10 mx-5 md:ml-10">
-				<p class="text-slate-500">Question 2</p>
+				<p class="text-slate-500">Question 1b</p>
 				<h2 class="text-xl font-bold mb-5">My institution is best described as</h2>
 				<select class="w-full" bind:value={institution}>
 					{#each types as type}
@@ -181,12 +190,10 @@
 			<div name="question" class="mt-10 mx-5 md:ml-10">
 				<p class="text-slate-500">Question 1c</p>
 				<h2 class="text-xl font-bold">My professional background is</h2>
-				<p class="italic text-slate-500 mb-5">
-					(Frequency: 1 Never 2 Rarely 3 Occasionally 4 Frequently 5 All the time)
-				</p>
-				<div class="w-full md:w-fit flex flex-col">
+				<p class="italic text-slate-500 mb-5" />
+				<div class="w-full flex flex-col">
 					<input
-						class="w-full md:w-fit mb-2 px-5"
+						class="w-full mb-2 px-5"
 						type="radio"
 						id="q1c1"
 						name="q1c"
@@ -212,22 +219,18 @@
 					<label class="w-full md:w-fit mb-2 px-5" for="q1c3"
 						>Post-Doc (with teaching obligations)</label
 					>
-					<input
-						type="radio"
-						id="q1c4"
-						name="q1c"
-						value="Post-Doc (with teaching obligations)"
-						bind:group={q1c}
-					/>
-					<label class="w-full md:w-fit mb-2 px-5" for="q1c4"
-						>Post-Doc (with teaching obligations)</label
-					>
-					<input type="radio" id="q1c5" name="q1c" value="Assistant Professor" bind:group={q1c} />
-					<label class="w-full md:w-fit mb-2 px-5" for="q1c5">Assistant Professor</label>
+					<input type="radio" id="q1c4" name="q1c" value="Assistant Professor" bind:group={q1c} />
+					<label class="w-full md:w-fit mb-2 px-5" for="q1c4">Assistant Professor</label>
+					<input type="radio" id="q1c5" name="q1c" value="Associate Professor" bind:group={q1c} />
+					<label class="w-full md:w-fit mb-2 px-5" for="q1c5">Associate Professor</label>
+					<input type="radio" id="q1c6" name="q1c" value="Full Professor" bind:group={q1c} />
+					<label class="w-full md:w-fit mb-2 px-5" for="q1c6">Full Professor</label>
+					<input type="radio" id="q1c7" name="q1c" value="Other" bind:group={q1c} />
+					<label class="w-full md:w-fit mb-2 px-5" for="q1c7">Other</label>
 				</div>
 			</div>
 
-			<div name="question" class="mt-10 mx-5 md:ml-10">
+			<div name="question" class="mt-10 mx-2 md:ml-10">
 				<p class="text-slate-500">Question 2</p>
 				<h2 class="text-xl font-bold">
 					My institution prioritizes teaching excellence in its strategic documents or discussions
@@ -250,7 +253,7 @@
 				</div>
 			</div>
 
-			<div name="question" class="mt-10 mx-5 md:ml-10">
+			<div name="question" class="mt-10 mx-2 md:ml-10">
 				<p class="text-slate-500">Question 3</p>
 				<h2 class="text-xl font-bold">
 					I have a clear understanding of what teaching excellence is and entails
@@ -272,7 +275,7 @@
 				</div>
 			</div>
 
-			<div name="question" class="mt-10 mx-5 md:ml-10">
+			<div name="question" class="mt-10 mx-2 md:ml-10">
 				<p class="text-slate-500">Question 4</p>
 				<h2 class="text-xl font-bold">To me, teaching excellence means:</h2>
 				<p class="italic text-slate-500 mb-5">
@@ -317,7 +320,7 @@
 				</div>
 			</div>
 
-			<div name="question" class="mt-10 mx-5 md:ml-10">
+			<div name="question" class="mt-10 mx-2 md:ml-10">
 				<p class="text-slate-500">Question 5</p>
 				<h2 class="text-xl font-bold">
 					I am familiar with teaching practices that promote “excellence” and I have applied some in
@@ -340,7 +343,7 @@
 				</div>
 			</div>
 
-			<div name="question" class="mt-10 mx-5 md:ml-10">
+			<div name="question" class="mt-10 mx-2 md:ml-10">
 				<p class="text-slate-500">Question 6</p>
 				<h2 class="text-xl font-bold">
 					In my opinion the most important qualities of an excellent teacher are:
@@ -390,7 +393,7 @@
 				</div>
 			</div>
 
-			<div name="question" class="mt-10 mx-5 md:ml-10">
+			<div name="question" class="mt-10 mx-2 md:ml-10">
 				<p class="text-slate-500">Question 7</p>
 				<h2 class="text-xl font-bold">
 					In my opinion the conditions that contribute most significantly to teaching excellence
@@ -447,7 +450,7 @@
 				</div>
 			</div>
 
-			<div name="question" class="mt-10 mx-5 md:ml-10">
+			<div name="question" class="mt-10 mx-2 md:ml-10">
 				<p class="text-slate-500">Question 9</p>
 				<h2 class="text-xl font-bold">
 					Excellent teaching is important for promotion at my institution
@@ -469,7 +472,7 @@
 				</div>
 			</div>
 
-			<div name="question" class="mt-10 mx-5 md:ml-10">
+			<div name="question" class="mt-10 mx-2 md:ml-10">
 				<p class="text-slate-500">Question 10</p>
 				<h2 class="text-xl font-bold">
 					There are sufficient awards and recognition schemes for excellent teaching at my
@@ -492,7 +495,7 @@
 				</div>
 			</div>
 
-			<div name="question" class="mt-10 mx-5 md:ml-10">
+			<div name="question" class="mt-10 mx-2 md:ml-10">
 				<p class="text-slate-500">Question 11</p>
 				<h2 class="text-xl font-bold">
 					My institution offers a sufficient number of trainings for improving my teaching
@@ -514,7 +517,7 @@
 				</div>
 			</div>
 
-			<div name="question" class="mt-10 mx-5 md:ml-10">
+			<div name="question" class="mt-10 mx-2 md:ml-10">
 				<p class="text-slate-500">Question 12</p>
 				<h2 class="text-xl font-bold">
 					I have attended training courses on teaching skills in the past
@@ -522,7 +525,7 @@
 				<p class="italic text-slate-500 mb-5">
 					(Agreement: 1 Strongly Disagree 2 Disagree 3 Undecided 4 Agree 5 Strongly Agree)
 				</p>
-				<div class="flex flex-row">
+				<div class="flex flex-row mr-10">
 					<input type="radio" id="q121" name="q12" value="1" bind:group={q12} />
 					<label for="q121">1</label>
 					<input type="radio" id="q122" name="q12" value="2" bind:group={q12} />
@@ -536,7 +539,153 @@
 				</div>
 			</div>
 
-			<div name="question" class="mt-10 mx-5 md:ml-10">
+			<p class="text-slate-500 mx-2 md:ml-10 mt-10">Question 13</p>
+			<h2 class="text-xl font-bold mx-2 md:ml-10">
+				I would consider the following training courses to be beneficial for my own development as
+				an excellent teacher
+			</h2>
+
+			<div name="question" class="mt-10 mx-2 mr-10 md:ml-10">
+				<h2 class="text-xl">How to design effective and engaging university courses</h2>
+				<p class="italic text-slate-500 mb-5">(Agreement: 1 Not Beneficial 5 Very Beneficial)</p>
+				<div class="flex flex-row mr-10">
+					<input type="radio" id="q13a1" name="q13a" value="1" bind:group={q13a} />
+					<label for="q13a1">1</label>
+					<input type="radio" id="q13a2" name="q13a" value="2" bind:group={q13a} />
+					<label for="q13a2">2</label>
+					<input type="radio" id="q13a3" name="q13a" value="3" bind:group={q13a} />
+					<label for="q13a3">3</label>
+					<input type="radio" id="q13a4" name="q13a" value="4" bind:group={q13a} />
+					<label for="q13a4">4</label>
+					<input type="radio" id="q13a5" name="q13a" value="5" bind:group={q13a} />
+					<label for="q13a5">5</label>
+				</div>
+			</div>
+
+			<div name="question" class="mt-10 mx-2 mr-10 md:ml-10">
+				<h2 class="text-xl">How to design effective and engaging assignments</h2>
+				<p class="italic text-slate-500 mb-5">(Agreement: 1 Not Beneficial 5 Very Beneficial)</p>
+				<div class="flex flex-row mr-10">
+					<input type="radio" id="q13b1" name="q13b" value="1" bind:group={q13b} />
+					<label for="q13b1">1</label>
+					<input type="radio" id="q13b2" name="q13b" value="2" bind:group={q13b} />
+					<label for="q13b2">2</label>
+					<input type="radio" id="q13b3" name="q13b" value="3" bind:group={q13b} />
+					<label for="q13b3">3</label>
+					<input type="radio" id="q13b4" name="q13b" value="4" bind:group={q13b} />
+					<label for="q13b4">4</label>
+					<input type="radio" id="q13b5" name="q13b" value="5" bind:group={q13b} />
+					<label for="q13b5">5</label>
+				</div>
+			</div>
+
+			<div name="question" class="mt-10 mx-2 mr-10 md:ml-10">
+				<h2 class="text-xl">
+					Inspirational and Engaging Teaching Methods for large classes and lectures
+				</h2>
+				<p class="italic text-slate-500 mb-5">(Agreement: 1 Not Beneficial 5 Very Beneficial)</p>
+				<div class="flex flex-row mr-10">
+					<input type="radio" id="q13c1" name="q13c" value="1" bind:group={q13c} />
+					<label for="q13c1">1</label>
+					<input type="radio" id="q13c2" name="q13c" value="2" bind:group={q13c} />
+					<label for="q13c2">2</label>
+					<input type="radio" id="q13c3" name="q13c" value="3" bind:group={q13c} />
+					<label for="q13c3">3</label>
+					<input type="radio" id="q13c4" name="q13c" value="4" bind:group={q13c} />
+					<label for="q13c4">4</label>
+					<input type="radio" id="q13c5" name="q13c" value="5" bind:group={q13c} />
+					<label for="q13c5">5</label>
+				</div>
+			</div>
+
+			<div name="question" class="mt-10 mx-2 md:ml-10">
+				<h2 class="text-xl">
+					Inspirational and Engaging Teaching Methods for small classes and seminars
+				</h2>
+				<p class="italic text-slate-500 mb-5">(Agreement: 1 Not Beneficial 5 Very Beneficial)</p>
+				<div class="flex flex-row mr-10">
+					<input type="radio" id="q13d1" name="q13d" value="1" bind:group={q13d} />
+					<label for="q13d1">1</label>
+					<input type="radio" id="q13d2" name="q13d" value="2" bind:group={q13d} />
+					<label for="q13d2">2</label>
+					<input type="radio" id="q13d3" name="q13d" value="3" bind:group={q13d} />
+					<label for="q13d3">3</label>
+					<input type="radio" id="q13d4" name="q13d" value="4" bind:group={q13d} />
+					<label for="q13d4">4</label>
+					<input type="radio" id="q13d5" name="q13d" value="5" bind:group={q13d} />
+					<label for="q13d5">5</label>
+				</div>
+			</div>
+
+			<div name="question" class="mt-10 mx-2 md:ml-10">
+				<h2 class="text-xl">Effective use of technology for teaching and learning</h2>
+				<p class="italic text-slate-500 mb-5">(Agreement: 1 Not Beneficial 5 Very Beneficial)</p>
+				<div class="flex flex-row mr-10">
+					<input type="radio" id="q13e1" name="q13e" value="1" bind:group={q13e} />
+					<label for="q13e1">1</label>
+					<input type="radio" id="q13e2" name="q13e" value="2" bind:group={q13e} />
+					<label for="q13e2">2</label>
+					<input type="radio" id="q13e3" name="q13e" value="3" bind:group={q13e} />
+					<label for="q13e3">3</label>
+					<input type="radio" id="q13e4" name="q13e" value="4" bind:group={q13e} />
+					<label for="q13e4">4</label>
+					<input type="radio" id="q13e5" name="q13e" value="5" bind:group={q13e} />
+					<label for="q13e5">5</label>
+				</div>
+			</div>
+
+			<div name="question" class="mt-10 mx-2 md:ml-10">
+				<h2 class="text-xl">Inclusive teaching for diverse learners</h2>
+				<p class="italic text-slate-500 mb-5">(Agreement: 1 Not Beneficial 5 Very Beneficial)</p>
+				<div class="flex flex-row mr-10">
+					<input type="radio" id="q13f1" name="q13f" value="1" bind:group={q13f} />
+					<label for="q13f1">1</label>
+					<input type="radio" id="q13f2" name="q13f" value="2" bind:group={q13f} />
+					<label for="q13f2">2</label>
+					<input type="radio" id="q13f3" name="q13f" value="3" bind:group={q13f} />
+					<label for="q13f3">3</label>
+					<input type="radio" id="q13f4" name="q13f" value="4" bind:group={q13f} />
+					<label for="q13f4">4</label>
+					<input type="radio" id="q13f5" name="q13f" value="5" bind:group={q13f} />
+					<label for="q13f5">5</label>
+				</div>
+			</div>
+
+			<div name="question" class="mt-10 mx-2 md:ml-10">
+				<h2 class="text-xl">Comprehensive Training for First-time University Teachers</h2>
+				<p class="italic text-slate-500 mb-5">(Agreement: 1 Not Beneficial 5 Very Beneficial)</p>
+				<div class="flex flex-row mr-10">
+					<input type="radio" id="q13g1" name="q13g" value="1" bind:group={q13g} />
+					<label for="q13g1">1</label>
+					<input type="radio" id="q13g2" name="q13g" value="2" bind:group={q13g} />
+					<label for="q13g2">2</label>
+					<input type="radio" id="q13g3" name="q13g" value="3" bind:group={q13g} />
+					<label for="q13g3">3</label>
+					<input type="radio" id="q13g4" name="q13g" value="4" bind:group={q13g} />
+					<label for="q13g4">4</label>
+					<input type="radio" id="q13g5" name="q13g" value="5" bind:group={q13g} />
+					<label for="q13g5">5</label>
+				</div>
+			</div>
+
+			<div name="question" class="mt-10 mx-2 md:ml-10">
+				<h2 class="text-xl">Time and Stress Management for University Teachers</h2>
+				<p class="italic text-slate-500 mb-5">(Agreement: 1 Not Beneficial 5 Very Beneficial)</p>
+				<div class="flex flex-row mr-10">
+					<input type="radio" id="q13h1" name="q13h" value="1" bind:group={q13h} />
+					<label for="q13h1">1</label>
+					<input type="radio" id="q13h2" name="q13h" value="2" bind:group={q13h} />
+					<label for="q13h2">2</label>
+					<input type="radio" id="q13h3" name="q13h" value="3" bind:group={q13h} />
+					<label for="q13h3">3</label>
+					<input type="radio" id="q13h4" name="q13h" value="4" bind:group={q13h} />
+					<label for="q13h4">4</label>
+					<input type="radio" id="q13h5" name="q13h" value="5" bind:group={q13h} />
+					<label for="q13h5">5</label>
+				</div>
+			</div>
+
+			<div name="question" class="mt-10 mx-2 md:ml-10">
 				<p class="text-slate-500">Question 13</p>
 				<h2 class="text-xl font-bold">What's your email address:</h2>
 				<input class="w-full" type="email" bind:value={email} />
@@ -627,12 +776,11 @@
 		cursor: pointer;
 		display: block;
 		height: 62px;
-		min-width: 100px;
+		min-width: 90px;
 		text-align: center;
 		line-height: 62px;
 		margin-right: 1em;
 		border-radius: 5px;
-		width: fit-content;
 	}
 	input[type='radio']:checked + label {
 		border: 2px solid black;

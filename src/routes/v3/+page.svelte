@@ -130,7 +130,7 @@
 </script>
 
 <div class="flex justify-center">
-	<div class="max-w-2xl">
+	<div class="max-w-xl">
 		<img src="/enote-logo.png" />
 		<form on:submit|preventDefault={handleSubmit}>
 			<div name="question" class="mt-10 mx-5 md:ml-10">
@@ -148,16 +148,16 @@
 				<p class="italic text-slate-500 mb-5">
 					(Frequency: 1 Never 2 Rarely 3 Occasionally 4 Frequently 5 All the time)
 				</p>
-				<div class="flex flex-row">
-					<input type="radio" id="q11" name="q2" value="1" bind:group={q2} />
+				<div class="flex flex-row justify-between">
+					<input class="hidden" type="radio" id="q11" name="q2" value="1" bind:group={q2} />
 					<label for="q11">1</label>
-					<input type="radio" id="q12" name="q2" value="2" bind:group={q2} />
+					<input class="hidden" type="radio" id="q12" name="q2" value="2" bind:group={q2} />
 					<label for="q12">2</label>
-					<input type="radio" id="q13" name="q2" value="3" bind:group={q2} />
+					<input class="hidden" type="radio" id="q13" name="q2" value="3" bind:group={q2} />
 					<label for="q13">3</label>
-					<input type="radio" id="q14" name="q2" value="4" bind:group={q2} />
+					<input class="hidden" type="radio" id="q14" name="q2" value="4" bind:group={q2} />
 					<label for="q14">4</label>
-					<input type="radio" id="q15" name="q2" value="5" bind:group={q2} />
+					<input class="hidden" type="radio" id="q15" name="q2" value="5" bind:group={q2} />
 					<label for="q15">5</label>
 				</div>
 			</div>
@@ -526,9 +526,6 @@
 </div>
 
 <style>
-	input[type='radio'] {
-		display: none;
-	}
 	input[type='radio'] + label {
 		border: 2px solid black;
 		background-color: white;
